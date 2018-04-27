@@ -4,9 +4,17 @@
 
 # C++ project
 language: cpp
+matrix:
+  include:
+    - os: linux
+      dist: trusty
+      sudo: required
+    - os: linux-ppc64le
+      dist: xenian
+      sudo: false
 
-dist: trusty
-sudo: required
+#dist: trusty
+#sudo: required
 group: edge
 
 
